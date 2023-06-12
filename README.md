@@ -11,6 +11,10 @@ Different ClangFormat style configuration files are available for different vers
 - [ClangFormat version 16.0.0](16.0.0/.clang-format)
 - [ClangFormat version 17.0.0](17.0.0/.clang-format)
 
+To learn more about ClangFormat, visit:
+
+- <https://clang.llvm.org/docs/ClangFormat.html>
+
 For a list of ClangFormat style options with descriptions and examples, visit:
 
 - <https://clang.llvm.org/docs/ClangFormatStyleOptions.html>
