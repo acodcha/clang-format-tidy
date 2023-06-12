@@ -17,14 +17,26 @@ For a list of ClangFormat style options with descriptions and examples, visit:
 
 - <https://clang.llvm.org/docs/ClangFormatStyleOptions.html>
 
+On Ubuntu, install ClangFormat with:
+
+```BASH
+sudo apt intall clang-format
+```
+
+Check the version of ClangFormat with:
+
+```BASH
+clang-format --version
+```
+
 Run ClangFormat with:
 
 ```BASH
-clang-format --style=file:path/to/style/configuration/file path/to/source/code/file.cpp
+clang-format --style=file:path/to/style/configuration/file path/to/source/code/file
 ```
 
 Alternatively, if you place a ClangFormat style configuration file named `.clang-format` or `_clang-format` in the root directory of your repository, you can run ClangFormat with:
 
 ```BASH
-clang-format --style=file path/to/source/code/file.cpp
+clang-format --style=file path/to/source/code/file
 ```
