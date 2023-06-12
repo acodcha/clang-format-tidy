@@ -1,11 +1,26 @@
 ---
+# These options are compatible with ClangFormat version 14.0.0
 AccessModifierOffset: -2
-AlignAfterOpenBracket: BlockIndent
-AlignArrayOfStructures: Right
-AlignConsecutiveAssignments: None
-AlignConsecutiveBitFields: None
-AlignConsecutiveDeclarations: None
-AlignConsecutiveMacros: None
+AlignAfterOpenBracket: Align
+AlignArrayOfStructures: Left
+AlignConsecutiveAssignments:
+  Enabled: false
+  AcrossEmptyLines: false
+  AcrossComments: false
+  AlignCompound: false
+  PadOperators: false
+AlignConsecutiveBitFields:
+  Enabled: false
+  AcrossEmptyLines: false
+  AcrossComments: false
+AlignConsecutiveDeclarations:
+  Enabled: false
+  AcrossEmptyLines: false
+  AcrossComments: false
+AlignConsecutiveMacros:
+  Enabled: false
+  AcrossEmptyLines: false
+  AcrossComments: false
 AlignEscapedNewlines: Left
 AlignOperands: Align
 AlignTrailingComments: true
@@ -15,9 +30,9 @@ AllowAllParametersOfDeclarationOnNextLine: true
 AllowShortBlocksOnASingleLine: Empty
 AllowShortCaseLabelsOnASingleLine: false
 AllowShortEnumsOnASingleLine: true
-AllowShortFunctionsOnASingleLine: Empty
-AllowShortIfStatementsOnASingleLine: Never
-AllowShortLambdasOnASingleLine: Empty
+AllowShortFunctionsOnASingleLine: All
+AllowShortIfStatementsOnASingleLine: WithoutElse
+AllowShortLambdasOnASingleLine: All
 AllowShortLoopsOnASingleLine: false
 AlwaysBreakAfterDefinitionReturnType: None
 AlwaysBreakAfterReturnType: None
@@ -28,33 +43,33 @@ BinPackArguments: true
 BinPackParameters: true
 BitFieldColonSpacing: Both
 BraceWrapping:
-  AfterCaseLabel:  false
-  AfterClass:      false
+  AfterCaseLabel: false
+  AfterClass: false
   AfterControlStatement: Never
-  AfterEnum:       false
+  AfterEnum: false
   AfterExternBlock: false
-  AfterFunction:   false
-  AfterNamespace:  false
+  AfterFunction: false
+  AfterNamespace: false
   AfterObjCDeclaration: false
-  AfterStruct:     false
-  AfterUnion:      false
-  BeforeCatch:     false
-  BeforeElse:      false
+  AfterStruct: false
+  AfterUnion: false
+  BeforeCatch: false
+  BeforeElse: false
   BeforeLambdaBody: false
-  BeforeWhile:     false
-  IndentBraces:    false
+  BeforeWhile: false
+  IndentBraces: false
   SplitEmptyFunction: false
   SplitEmptyRecord: false
   SplitEmptyNamespace: false
 BreakAfterJavaFieldAnnotations: false
 BreakBeforeBinaryOperators: NonAssignment
 BreakBeforeBraces: Custom
-BreakBeforeConceptDeclarations: false
-BreakBeforeTernaryOperators: true
+BreakBeforeConceptDeclarations: Allowed
+BreakBeforeTernaryOperators: false
 BreakConstructorInitializers: BeforeColon
 BreakInheritanceList: BeforeColon
 BreakStringLiterals: true
-ColumnLimit: 80
+ColumnLimit: 100
 CommentPragmas: '^ IWYU pragma:'
 CompactNamespaces: false
 ConstructorInitializerAllOnOneLineOrOnePerLine: false
@@ -69,32 +84,32 @@ EmptyLineBeforeAccessModifier: Always
 ExperimentalAutoDetectBinPacking: false
 FixNamespaceComments: true
 ForEachMacros: ['BOOST_FOREACH', 'FOREACH', 'foreach', 'Q_FOREACH']
-IfMacros: ['KJ_IF_MAYBE']
+IfMacros: ['IF', 'KJ_IF_MAYBE']
 IncludeBlocks: Regroup
 IncludeCategories:
-  - Regex:           '^<.*\.h>'
+  - Regex:           '^<.*\.h>' # C standard template library headers
     Priority:        1
-    SortPriority:    0
+    SortPriority:    1
     CaseSensitive:   false
-  - Regex:           '^<.*'
+  - Regex:           '^<.*' # C++ standard template library headers
     Priority:        2
-    SortPriority:    0
+    SortPriority:    2
     CaseSensitive:   false
-  - Regex:           '.*'
+  - Regex:           '.*' # All other headers
     Priority:        3
-    SortPriority:    0
+    SortPriority:    3
     CaseSensitive:   false
 IncludeIsMainRegex: '([-_](test|unittest))?$'
 IncludeIsMainSourceRegex: ''
 IndentAccessModifiers: false
 IndentCaseBlocks: true
-IndentCaseLabels: false
+IndentCaseLabels: true
 IndentExternBlock: NoIndent
 IndentGotoLabels: true
-IndentPPDirectives: AfterHash
+IndentPPDirectives: BeforeHash
 IndentRequires: false
 IndentWidth: 2
-IndentWrappedFunctionNames: true
+IndentWrappedFunctionNames: false
 InsertTrailingCommas: None
 JavaImportGroups: []
 JavaScriptQuotes: Leave
@@ -113,18 +128,27 @@ ObjCSpaceAfterProperty: false
 ObjCSpaceBeforeProtocolList: false
 PPIndentWidth: 2
 PackConstructorInitializers: BinPack
-PenaltyBreakAssignment: 4
+PenaltyBreakAssignment: 8
 PenaltyBreakBeforeFirstCallParameter: 4
 PenaltyBreakComment: 16
-PenaltyBreakFirstLessLess: 4
+PenaltyBreakFirstLessLess: 8
 PenaltyBreakOpenParenthesis: 4
 PenaltyBreakString: 16
-PenaltyBreakTemplateDeclaration: 8
+PenaltyBreakTemplateDeclaration: 16
 PenaltyExcessCharacter: 128
 PenaltyIndentedWhitespace: 1
-PenaltyReturnTypeOnItsOwnLine: 8
+PenaltyReturnTypeOnItsOwnLine: 32
 PointerAlignment: Left
 QualifierAlignment: Left
+QualifierOrder:
+  - 'static'
+  - 'friend'
+  - 'inline'
+  - 'volatile'
+  - 'restrict'
+  - 'constexpr'
+  - 'const'
+  - 'type'
 RawStringFormats:
   - Language: Cpp
     Delimiters: ['cc', 'CC', 'cpp', 'Cpp', 'CPP', 'c++', 'C++']
@@ -132,7 +156,16 @@ RawStringFormats:
     BasedOnStyle: Google
   - Language: TextProto
     Delimiters: ['pb', 'PB', 'proto', 'PROTO']
-    EnclosingFunctions: ['EqualsProto', 'EquivToProto', 'PARSE_PARTIAL_TEXT_PROTO', 'PARSE_TEST_PROTO', 'PARSE_TEXT_PROTO', 'ParseTextOrDie', 'ParseTextProtoOrDie', 'ParseTestProto', 'ParsePartialTestProto']
+    EnclosingFunctions:
+      - 'EqualsProto'
+      - 'EquivToProto'
+      - 'PARSE_PARTIAL_TEXT_PROTO'
+      - 'PARSE_TEST_PROTO'
+      - 'PARSE_TEXT_PROTO'
+      - 'ParseTextOrDie'
+      - 'ParseTextProtoOrDie'
+      - 'ParseTestProto'
+      - 'ParsePartialTestProto'
     CanonicalDelimiter: pb
     BasedOnStyle: Google
 ReferenceAlignment: Left
@@ -142,7 +175,7 @@ SeparateDefinitionBlocks: Leave
 ShortNamespaceLines: 0
 SortIncludes: CaseInsensitive
 SortJavaStaticImport: Before
-SortUsingDeclarations: true
+SortUsingDeclarations: Lexicographic
 SpaceAfterCStyleCast: false
 SpaceAfterLogicalNot: false
 SpaceAfterTemplateKeyword: false
@@ -179,7 +212,12 @@ Standard: Latest
 StatementAttributeLikeMacros: ['Q_EMIT']
 StatementMacros: ['Q_UNUSED', 'QT_REQUIRE_VERSION']
 TabWidth: 8
-TypenameMacros: []
+TypenameMacros: ['STACK_OF', 'LIST']
 UseCRLF: false
 UseTab: Never
-WhitespaceSensitiveMacros: ['STRINGIZE', 'PP_STRINGIZE', 'BOOST_PP_STRINGIZE', 'NS_SWIFT_NAME', 'CF_SWIFT_NAME']
+WhitespaceSensitiveMacros:
+  - 'STRINGIZE'
+  - 'PP_STRINGIZE'
+  - 'BOOST_PP_STRINGIZE'
+  - 'NS_SWIFT_NAME'
+  - 'CF_SWIFT_NAME'

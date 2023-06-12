@@ -15,7 +15,6 @@ ClangFormat version 15.0.0 supports these additional style options:
 ```YAML
 IndentRequiresClause: false
 InsertBraces: true
-QualifierOrder: ['friend', 'static', 'volatile', 'inline', 'constexpr', 'const', 'restrict', 'type']
 RequiresClausePosition: SingleLine
 SpaceBeforeParensOptions:
   AfterRequiresInClause: true
