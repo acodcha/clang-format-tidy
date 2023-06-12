@@ -2,7 +2,17 @@
 
 This repository contains the ClangFormat style configuration file in use in my projects.
 
-Visit <https://clang.llvm.org/docs/ClangFormatStyleOptions.html> for a list of ClangFormat style options with descriptions and examples.
+Different ClangFormat style configuration files are available for different versions of ClangFormat:
+
+- [ClangFormat version 13.0.0](13.0.0/.clang-format)
+- [ClangFormat version 14.0.0](14.0.0/.clang-format)
+- [ClangFormat version 15.0.0](15.0.0/.clang-format)
+- [ClangFormat version 16.0.0](16.0.0/.clang-format)
+- [ClangFormat version 17.0.0](17.0.0/.clang-format)
+
+For a list of ClangFormat style options with descriptions and examples, visit:
+
+- <https://clang.llvm.org/docs/ClangFormatStyleOptions.html>
 
 Run ClangFormat with:
 
@@ -10,41 +20,8 @@ Run ClangFormat with:
 clang-format --style=file:path/to/style/configuration/file path/to/source/code/file.cpp
 ```
 
-ClangFormat version 15.0.0 supports these additional style options:
+Alternatively, if you place a ClangFormat style configuration file named `.clang-format` or `_clang-format` in the root directory of your repository, you can run ClangFormat with:
 
-```YAML
-IndentRequiresClause: false
-InsertBraces: true
-RequiresClausePosition: SingleLine
-SpaceBeforeParensOptions:
-  AfterRequiresInClause: true
-  AfterRequiresInExpression: true
-```
-
-ClangFormat version 16.0.0 supports these additional style options:
-
-```YAML
-BreakAfterAttributes: Never
-BreakArrays: false
-BreakBeforeInlineASMColon: OnlyMultiline
-InsertNewlineAtEOF: true
-IntegerLiteralSeparator:
-  Binary: 0
-  BinaryMinDigits: 0
-  Decimal: 0
-  DecimalMinDigits: 0
-  Hex: 0
-  HexMinDigits: 0
-LineEnding: DeriveLF
-RemoveSemicolon: false
-RequiresExpressionIndentation: OuterScope
-```
-
-ClangFormat version 17.0.0 supports these additional style options:
-
-```YAML
-BracedInitializerIndentWidth: 2
-Macros: []
-SpaceBeforeJsonColon: false
-VerilogBreakBetweenInstancePorts: false
+```BASH
+clang-format --style=file path/to/source/code/file.cpp
 ```
