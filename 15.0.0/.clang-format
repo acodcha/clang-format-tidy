@@ -1,5 +1,5 @@
 ---
-# These options are compatible with ClangFormat version 14.0.0
+# These options are compatible with ClangFormat version 15.0.0
 AccessModifierOffset: -2
 AlignAfterOpenBracket: Align
 AlignArrayOfStructures: Left
