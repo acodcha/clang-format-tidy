@@ -4,6 +4,7 @@ This repository contains the ClangFormat style configuration file in use in my p
 
 Different ClangFormat style configuration files are available for different versions of ClangFormat:
 
+- [ClangFormat version 12.0.0](12.0.0/.clang-format)
 - [ClangFormat version 13.0.0](13.0.0/.clang-format)
 - [ClangFormat version 14.0.0](14.0.0/.clang-format)
 - [ClangFormat version 15.0.0](15.0.0/.clang-format)
