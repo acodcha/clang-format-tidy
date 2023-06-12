@@ -20,7 +20,7 @@ For a list of ClangFormat style options with descriptions and examples, visit:
 On Ubuntu, install ClangFormat with:
 
 ```BASH
-sudo apt intall clang-format
+sudo apt install clang-format
 ```
 
 Check the version of ClangFormat with:
