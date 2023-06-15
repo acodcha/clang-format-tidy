@@ -61,13 +61,10 @@ BraceWrapping:
   SplitEmptyFunction: false
   SplitEmptyRecord: false
   SplitEmptyNamespace: false
-BreakAfterAttributes: Never
 BreakAfterJavaFieldAnnotations: false
-BreakArrays: false
 BreakBeforeBinaryOperators: NonAssignment
 BreakBeforeBraces: Custom
 BreakBeforeConceptDeclarations: Allowed
-BreakBeforeInlineASMColon: OnlyMultiline
 BreakBeforeTernaryOperators: false
 BreakConstructorInitializers: BeforeColon
 BreakInheritanceList: BeforeColon
@@ -114,21 +111,12 @@ IndentRequiresClause: false
 IndentWidth: 2
 IndentWrappedFunctionNames: false
 InsertBraces: true
-InsertNewlineAtEOF: true
 InsertTrailingCommas: None
-IntegerLiteralSeparator:
-  Binary: 0
-  BinaryMinDigits: 0
-  Decimal: 0
-  DecimalMinDigits: 0
-  Hex: 0
-  HexMinDigits: 0
 JavaImportGroups: []
 JavaScriptQuotes: Leave
 JavaScriptWrapImports: true
 KeepEmptyLinesAtTheStartOfBlocks: false
 LambdaBodyIndentation: Signature
-LineEnding: DeriveLF
 MacroBlockBegin: ''
 MacroBlockEnd: ''
 MaxEmptyLinesToKeep: 1
@@ -175,14 +163,12 @@ RawStringFormats:
 ReferenceAlignment: Left
 ReflowComments: true
 RemoveBracesLLVM: false
-RemoveSemicolon: false
 RequiresClausePosition: SingleLine
-RequiresExpressionIndentation: OuterScope
 SeparateDefinitionBlocks: Leave
 ShortNamespaceLines: 0
 SortIncludes: CaseInsensitive
 SortJavaStaticImport: Before
-SortUsingDeclarations: Lexicographic
+SortUsingDeclarations: true
 SpaceAfterCStyleCast: false
 SpaceAfterLogicalNot: false
 SpaceAfterTemplateKeyword: false
