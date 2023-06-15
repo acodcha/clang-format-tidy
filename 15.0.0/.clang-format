@@ -141,15 +141,6 @@ PenaltyIndentedWhitespace: 1
 PenaltyReturnTypeOnItsOwnLine: 32
 PointerAlignment: Left
 QualifierAlignment: Left
-QualifierOrder:
-  - 'static'
-  - 'friend'
-  - 'inline'
-  - 'volatile'
-  - 'restrict'
-  - 'constexpr'
-  - 'const'
-  - 'type'
 RawStringFormats:
   - Language: Cpp
     Delimiters: ['cc', 'CC', 'cpp', 'Cpp', 'CPP', 'c++', 'C++']
