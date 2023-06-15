@@ -8,6 +8,7 @@ This repository contains the ClangFormat style configuration file I use for auto
 - [14.0.0](14.0.0/.clang-format)
 - [13.0.0](13.0.0/.clang-format)
 - [12.0.0](12.0.0/.clang-format)
+- [11.0.0](11.0.0/.clang-format)
 
 To learn more about ClangFormat, visit:
 
