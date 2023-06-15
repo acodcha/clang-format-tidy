@@ -1,6 +1,6 @@
 # ClangFormat Style Configuration File
 
-This repository contains the ClangFormat style configuration file I use for automated source code formatting. This file is available for different versions of ClangFormat:
+This repository contains the ClangFormat style configuration file I use for automated source code formatting in my software projects. This file is available for different versions of ClangFormat:
 
 - [17.0.0](17.0.0/.clang-format)
 - [16.0.0](16.0.0/.clang-format)
