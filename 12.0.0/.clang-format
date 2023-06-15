@@ -2,24 +2,10 @@
 # These options are compatible with ClangFormat version 12.0.0
 AccessModifierOffset: -2
 AlignAfterOpenBracket: Align
-AlignConsecutiveAssignments:
-  Enabled: false
-  AcrossEmptyLines: false
-  AcrossComments: false
-  AlignCompound: false
-  PadOperators: false
-AlignConsecutiveBitFields:
-  Enabled: false
-  AcrossEmptyLines: false
-  AcrossComments: false
-AlignConsecutiveDeclarations:
-  Enabled: false
-  AcrossEmptyLines: false
-  AcrossComments: false
-AlignConsecutiveMacros:
-  Enabled: false
-  AcrossEmptyLines: false
-  AcrossComments: false
+AlignConsecutiveAssignments: false
+AlignConsecutiveBitFields: false
+AlignConsecutiveDeclarations: false
+AlignConsecutiveMacros: false
 AlignEscapedNewlines: Left
 AlignOperands: Align
 AlignTrailingComments: true
@@ -63,7 +49,7 @@ BraceWrapping:
 BreakAfterJavaFieldAnnotations: false
 BreakBeforeBinaryOperators: NonAssignment
 BreakBeforeBraces: Custom
-BreakBeforeConceptDeclarations: Allowed
+BreakBeforeConceptDeclarations: false
 BreakBeforeTernaryOperators: false
 BreakConstructorInitializers: BeforeColon
 BreakInheritanceList: BeforeColon
@@ -151,9 +137,9 @@ RawStringFormats:
     CanonicalDelimiter: pb
     BasedOnStyle: Google
 ReflowComments: true
-SortIncludes: CaseInsensitive
+SortIncludes: true
 SortJavaStaticImport: Before
-SortUsingDeclarations: Lexicographic
+SortUsingDeclarations: true
 SpaceAfterCStyleCast: false
 SpaceAfterLogicalNot: false
 SpaceAfterTemplateKeyword: false
@@ -163,13 +149,13 @@ SpaceBeforeCaseColon: false
 SpaceBeforeCpp11BracedList: false
 SpaceBeforeCtorInitializerColon: true
 SpaceBeforeInheritanceColon: true
-SpaceBeforeParens: Custom
+SpaceBeforeParens: ControlStatements
 SpaceBeforeRangeBasedForLoopColon: true
 SpaceBeforeSquareBrackets: false
 SpaceInEmptyBlock: false
 SpaceInEmptyParentheses: false
 SpacesBeforeTrailingComments: 2
-SpacesInAngles: Never
+SpacesInAngles: false
 SpacesInConditionalStatement: false
 SpacesInContainerLiterals: false
 SpacesInCStyleCastParentheses: false

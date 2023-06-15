@@ -3,24 +3,10 @@
 AccessModifierOffset: -2
 AlignAfterOpenBracket: Align
 AlignArrayOfStructures: Left
-AlignConsecutiveAssignments:
-  Enabled: false
-  AcrossEmptyLines: false
-  AcrossComments: false
-  AlignCompound: false
-  PadOperators: false
-AlignConsecutiveBitFields:
-  Enabled: false
-  AcrossEmptyLines: false
-  AcrossComments: false
-AlignConsecutiveDeclarations:
-  Enabled: false
-  AcrossEmptyLines: false
-  AcrossComments: false
-AlignConsecutiveMacros:
-  Enabled: false
-  AcrossEmptyLines: false
-  AcrossComments: false
+AlignConsecutiveAssignments: false
+AlignConsecutiveBitFields: false
+AlignConsecutiveDeclarations: false
+AlignConsecutiveMacros: false
 AlignEscapedNewlines: Left
 AlignOperands: Align
 AlignTrailingComments: true
@@ -64,7 +50,7 @@ BraceWrapping:
 BreakAfterJavaFieldAnnotations: false
 BreakBeforeBinaryOperators: NonAssignment
 BreakBeforeBraces: Custom
-BreakBeforeConceptDeclarations: Allowed
+BreakBeforeConceptDeclarations: false
 BreakBeforeTernaryOperators: false
 BreakConstructorInitializers: BeforeColon
 BreakInheritanceList: BeforeColon
@@ -161,7 +147,7 @@ ReflowComments: true
 ShortNamespaceLines: 0
 SortIncludes: CaseInsensitive
 SortJavaStaticImport: Before
-SortUsingDeclarations: Lexicographic
+SortUsingDeclarations: true
 SpaceAfterCStyleCast: false
 SpaceAfterLogicalNot: false
 SpaceAfterTemplateKeyword: false
@@ -171,7 +157,7 @@ SpaceBeforeCaseColon: false
 SpaceBeforeCpp11BracedList: false
 SpaceBeforeCtorInitializerColon: true
 SpaceBeforeInheritanceColon: true
-SpaceBeforeParens: Custom
+SpaceBeforeParens: ControlStatements
 SpaceBeforeRangeBasedForLoopColon: true
 SpaceBeforeSquareBrackets: false
 SpaceInEmptyBlock: false
