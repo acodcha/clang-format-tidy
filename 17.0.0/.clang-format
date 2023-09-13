@@ -220,7 +220,7 @@ SortJavaStaticImport: Before
 SortUsingDeclarations: Lexicographic
 SpaceAfterCStyleCast: false
 SpaceAfterLogicalNot: false
-SpaceAfterTemplateKeyword: false
+SpaceAfterTemplateKeyword: true
 SpaceAroundPointerQualifiers: Before
 SpaceBeforeAssignmentOperators: true
 SpaceBeforeCaseColon: false

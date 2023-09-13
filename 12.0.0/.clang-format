@@ -175,7 +175,7 @@ SortJavaStaticImport: Before
 SortUsingDeclarations: true
 SpaceAfterCStyleCast: false
 SpaceAfterLogicalNot: false
-SpaceAfterTemplateKeyword: false
+SpaceAfterTemplateKeyword: true
 SpaceAroundPointerQualifiers: Before
 SpaceBeforeAssignmentOperators: true
 SpaceBeforeCaseColon: false
