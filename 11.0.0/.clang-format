@@ -47,15 +47,15 @@ AllowAllConstructorInitializersOnNextLine: true
 AllowAllParametersOfDeclarationOnNextLine: true
 AllowShortBlocksOnASingleLine: Empty
 AllowShortCaseLabelsOnASingleLine: false
-AllowShortEnumsOnASingleLine: true
-AllowShortFunctionsOnASingleLine: All
-AllowShortIfStatementsOnASingleLine: WithoutElse
-AllowShortLambdasOnASingleLine: All
+AllowShortEnumsOnASingleLine: false
+AllowShortFunctionsOnASingleLine: Empty
+AllowShortIfStatementsOnASingleLine: Never
+AllowShortLambdasOnASingleLine: Empty
 AllowShortLoopsOnASingleLine: false
 AlwaysBreakAfterDefinitionReturnType: None
 AlwaysBreakAfterReturnType: None
 AlwaysBreakBeforeMultilineStrings: true
-AlwaysBreakTemplateDeclarations: No
+AlwaysBreakTemplateDeclarations: Yes
 BinPackArguments: true
 BinPackParameters: true
 BraceWrapping:
@@ -132,13 +132,13 @@ ObjCBlockIndentWidth: 2
 ObjCBreakBeforeNestedBlockParam: true
 ObjCSpaceAfterProperty: false
 ObjCSpaceBeforeProtocolList: false
-PenaltyBreakAssignment: 8
+PenaltyBreakAssignment: 4
 PenaltyBreakBeforeFirstCallParameter: 4
 PenaltyBreakComment: 16
-PenaltyBreakFirstLessLess: 8
-PenaltyBreakString: 16
-PenaltyBreakTemplateDeclaration: 16
-PenaltyExcessCharacter: 128
+PenaltyBreakFirstLessLess: 4
+PenaltyBreakString: 32
+PenaltyBreakTemplateDeclaration: 0
+PenaltyExcessCharacter: 1024
 PenaltyReturnTypeOnItsOwnLine: 32
 PointerAlignment: Left
 RawStringFormats:
