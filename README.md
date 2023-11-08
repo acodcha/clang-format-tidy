@@ -4,13 +4,13 @@ This repository contains style configuration files for LLVM's ClangFormat automa
 
 The style configuration files are available for different versions of ClangFormat:
 
-- [Version 17.0.0](17.0.0/.clang-format)
-- [Version 16.0.0](16.0.0/.clang-format)
-- [Version 15.0.0](15.0.0/.clang-format)
-- [Version 14.0.0](14.0.0/.clang-format)
-- [Version 13.0.0](13.0.0/.clang-format)
-- [Version 12.0.0](12.0.0/.clang-format)
-- [Version 11.0.0](11.0.0/.clang-format)
+- [ClangFormat Version 17.0.0](clang-format-17.0.0/.clang-format)
+- [ClangFormat Version 16.0.0](clang-format-16.0.0/.clang-format)
+- [ClangFormat Version 15.0.0](clang-format-15.0.0/.clang-format)
+- [ClangFormat Version 14.0.0](clang-format-14.0.0/.clang-format)
+- [ClangFormat Version 13.0.0](clang-format-13.0.0/.clang-format)
+- [ClangFormat Version 12.0.0](clang-format-12.0.0/.clang-format)
+- [ClangFormat Version 11.0.0](clang-format-11.0.0/.clang-format)
 
 On Ubuntu, install ClangFormat with:
 
