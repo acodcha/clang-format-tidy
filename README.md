@@ -11,13 +11,13 @@ I created these configuration files for use in my own personal software projects
 
 The configuration files are available for different versions of **clang-format**:
 
-- [**clang-format** Configuration File for Version 17.0.0](clang-format-17.0.0/.clang-format)
-- [**clang-format** Configuration File for Version 16.0.0](clang-format-16.0.0/.clang-format)
-- [**clang-format** Configuration File for Version 15.0.0](clang-format-15.0.0/.clang-format)
-- [**clang-format** Configuration File for Version 14.0.0](clang-format-14.0.0/.clang-format)
-- [**clang-format** Configuration File for Version 13.0.0](clang-format-13.0.0/.clang-format)
-- [**clang-format** Configuration File for Version 12.0.0](clang-format-12.0.0/.clang-format)
-- [**clang-format** Configuration File for Version 11.0.0](clang-format-11.0.0/.clang-format)
+- [**clang-format** Configuration File for Version 17.0.0](clang-format/17.0.0/.clang-format)
+- [**clang-format** Configuration File for Version 16.0.0](clang-format/16.0.0/.clang-format)
+- [**clang-format** Configuration File for Version 15.0.0](clang-format/15.0.0/.clang-format)
+- [**clang-format** Configuration File for Version 14.0.0](clang-format/14.0.0/.clang-format)
+- [**clang-format** Configuration File for Version 13.0.0](clang-format/13.0.0/.clang-format)
+- [**clang-format** Configuration File for Version 12.0.0](clang-format/12.0.0/.clang-format)
+- [**clang-format** Configuration File for Version 11.0.0](clang-format/11.0.0/.clang-format)
 
 On Ubuntu, install **clang-format** with:
 
