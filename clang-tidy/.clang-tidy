@@ -88,4 +88,6 @@ User: ''
 CheckOptions:
   - key: hicpp-signed-bitwise.IgnorePositiveIntegerLiterals
     value: 'true'
+  - key: readability-redundant-member-init.IgnoreBaseInCopyConstructors
+    value: 'true'
 ...
