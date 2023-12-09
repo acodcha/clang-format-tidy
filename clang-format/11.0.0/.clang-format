@@ -126,7 +126,7 @@ PenaltyBreakFirstLessLess: 4
 PenaltyBreakString: 100
 PenaltyBreakTemplateDeclaration: 0
 PenaltyExcessCharacter: 10000
-PenaltyReturnTypeOnItsOwnLine: 32
+PenaltyReturnTypeOnItsOwnLine: 50
 PointerAlignment: Left
 RawStringFormats:
   - Language: Cpp

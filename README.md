@@ -2,7 +2,9 @@
 
 Configuration files for LLVM's **clang-format** automatic source code formatter and LLVM's **clang-tidy** automatic source code linter.
 
-I created these configuration files for use in my own personal software projects and hope that they will be useful to others. These files are licensed under the MIT license, so you may use them in your software projects subject to the terms of the license. For more information about the MIT license, see the [LICENSE](LICENSE) file or visit <https://mit-license.org>. For more information about LLVM's **clang-format**, visit <https://clang.llvm.org/docs/ClangFormat.html>. For more information about LLVM's **clang-tidy**, visit <https://clang.llvm.org/extra/clang-tidy>
+I created these configuration files for use in my personal software projects. These files are licensed under the MIT license, so you may use them in your software projects subject to the terms of the license. For more information about the MIT license, see the [LICENSE](LICENSE) file or visit <https://mit-license.org>. For more information about LLVM's **clang-format**, visit <https://clang.llvm.org/docs/ClangFormat.html>. For more information about LLVM's **clang-tidy**, visit <https://clang.llvm.org/extra/clang-tidy>
+
+Contents:
 
 - [**clang-format** Configuration File](#clang-format-configuration-file)
 - [**clang-tidy** Configuration File](#clang-tidy-configuration-file)
@@ -59,13 +61,13 @@ On Ubuntu, install **clang-tidy** with:
 sudo apt install clang-tidy
 ```
 
-Run the linter on your source code files with:
+Lint your source code files with:
 
 ```BASH
 clang-tidy --config-file=/path/to/configuration/file --extra-arg=-std=c++20 /path/to/source/code/files
 ```
 
-Alternatively, if you place a **clang-tidy** configuration file named `.clang-tidy` in the root directory of your source code repository, you can run the linter on your source code files with:
+Alternatively, if you place a **clang-tidy** configuration file named `.clang-tidy` in the root directory of your source code repository, you can lint your source code files with:
 
 ```BASH
 clang-tidy --extra-arg=-std=c++20 /path/to/source/code/files
