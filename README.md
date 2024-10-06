@@ -13,6 +13,7 @@ Contents:
 
 The configuration files are available for different versions of **clang-format**:
 
+- [**clang-format** Configuration File for Version 18.0.0](clang-format/18.0.0/.clang-format)
 - [**clang-format** Configuration File for Version 17.0.0](clang-format/17.0.0/.clang-format)
 - [**clang-format** Configuration File for Version 16.0.0](clang-format/16.0.0/.clang-format)
 - [**clang-format** Configuration File for Version 15.0.0](clang-format/15.0.0/.clang-format)
