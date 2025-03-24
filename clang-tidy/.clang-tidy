@@ -1,5 +1,5 @@
 ---
-# Copyright © 2023-2024 Alexandre Coderre-Chabot
+# Copyright © 2023-2025 Alexandre Coderre-Chabot
 #
 # This file is hosted at:
 #     https://github.com/acodcha/clang-format-tidy
@@ -87,7 +87,6 @@ zircon-*,
 '
 WarningsAsErrors: ''
 HeaderFilterRegex: ''
-AnalyzeTemporaryDtors: false
 FormatStyle: none
 User: ''
 CheckOptions:
