@@ -1,11 +1,11 @@
 ---
-# Copyright © 2023-2024 Alexandre Coderre-Chabot
+# Copyright © 2023-2025, Alexandre Coderre-Chabot.
 #
-# This file is hosted at:
-#     https://github.com/acodcha/clang-format-tidy
+# This file is part of Clang-Format-Tidy, a collection of configuration files for automatic source
+# code formatting and linting with LLVM's Clang-Format and Clang-Tidy utilities. Clang-Format-Tidy
+# is hosted at: https://github.com/acodcha/clang-format-tidy
 #
-# This file is licensed under the MIT License:
-#     https://mit-license.org
+# This file is licensed under the MIT License: https://mit-license.org
 #
 # Permission is hereby granted, free of charge, to any person obtaining a copy of this software and
 # associated documentation files (the "Software"), to deal in the Software without restriction,
@@ -20,13 +20,12 @@
 #     DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM
 #     OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 #
-# This is a configuration file for use with LLVM's ClangFormat automatic source code formatter:
-#     https://clang.llvm.org/docs/ClangFormat.html
+# This is a configuration file for use with LLVM's Clang-Format automatic source code formatter.
+# Clang-Format is hosted at: https://clang.llvm.org/docs/ClangFormat.html
 #
-# This file is compatible with ClangFormat version 14.0.0 or any later version. To format your
-# source code files, copy this file to the root directory of your source code repository, name it
-# ".clang-format", and run:
-#     clang-format --style=file -i path/to/source/code/files
+# This file is compatible with Clang-Format version 14.0.0 or any later version. To format source
+# code files, copy this file to the root directory of your source code repository, name it
+# ".clang-format", and run: clang-format --style=file -i path/to/source/code/files
 #
 AccessModifierOffset: -2
 AlignAfterOpenBracket: Align
