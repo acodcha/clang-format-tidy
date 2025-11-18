@@ -174,7 +174,7 @@ PenaltyBreakBeforeFirstCallParameter: 4
 PenaltyBreakComment: 8
 PenaltyBreakFirstLessLess: 4
 PenaltyBreakOpenParenthesis: 4
-PenaltyBreakScopeResolution: 200
+PenaltyBreakScopeResolution: 400
 PenaltyBreakString: 100
 PenaltyBreakTemplateDeclaration: 0
 PenaltyExcessCharacter: 10000
